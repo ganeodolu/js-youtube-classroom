@@ -30,16 +30,12 @@ export const SearchResultsTemplate = (results) => {
                     <div class="meta">
                       <p>2021년 3월 2일</p>
                     </div>
-                    <div>
-                      <span class="opacity-hover">✅</span>
-                      <span class="opacity-hover">👍</span>
-                      <span class="opacity-hover">💬</span>
-                      <span class="opacity-hover">🗑️</span>
+                    <div class="d-flex justify-end">
+                      <button class="btn">⬇️ 저장</button>
                     </div>
                   </div>
                 </div>
               </article>
     `;
-  })
-
+  }).join('');
 } 
