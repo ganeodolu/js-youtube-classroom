@@ -7,6 +7,13 @@
   justify-content: center;
 }
 
+.no-result {
+  align-items: center;
+  height: 10vh;
+  width: 10vw;
+  background: no-repeat center/100% url('../../../images/status/not_found.png');
+}
+
 .clip {
   height: 219px;
   cursor: pointer;

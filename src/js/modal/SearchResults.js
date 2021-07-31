@@ -1,6 +1,6 @@
-import api from "../api/apiHandler.js";
+// import api from "../api/apiHandler.js";
 import { SearchResultsTemplate } from "../utils/templates.js";
-import { data } from '../utils/mock.js';
+import { data, emptyData } from '../utils/mock.js';
 export default class SearchResults {
 	constructor({ keyword, $searchResults }) {
 		this.keyword = keyword;
@@ -15,7 +15,8 @@ export default class SearchResults {
 		try {
       console.log(this.keyword);
       // const response = await api.fetchResult(this.keyword);
-      const response = data;
+      // const response = data;
+      const response = emptyData;
       console.log(response)
 			this.$searchResults.innerHTML = SearchResultsTemplate(response);
 		} catch (e) {

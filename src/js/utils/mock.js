@@ -350,3 +350,15 @@ export const data = {
         }
     ]
 };
+
+export const emptyData = {
+					kind: "youtube#searchListResponse",
+					etag: "jY03jGgN1g_xKk8RSHyjN_PoL8I",
+					regionCode: "KR",
+					pageInfo: {
+						totalResults: 0,
+						resultsPerPage: 0,
+					},
+					items: [],
+};
+                
