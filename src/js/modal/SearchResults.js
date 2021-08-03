@@ -15,8 +15,8 @@ export default class SearchResults {
 		try {
       console.log(this.keyword);
       // const response = await api.fetchResult(this.keyword);
-      // const response = data;
-      const response = emptyData;
+      const response = data;
+      // const response = emptyData;
       console.log(response)
 			this.$searchResults.innerHTML = SearchResultsTemplate(response);
 		} catch (e) {

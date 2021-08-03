@@ -6,6 +6,7 @@ export default class SearchInput {
 		this.$searchInput.addEventListener("keypress", (e) => {
 			if (e.key === "Enter") {
 				e.preventDefault();
+				if (e.target.value === "") return;
 				// console.log(e);
 				onInput(e.target.value);
 				e.target.value = "";
@@ -13,8 +14,9 @@ export default class SearchInput {
 		});
 		this.$searchInputButton.addEventListener("click", () => {
 			// console.log(this.$searchInput.value)
+			if (this.$searchInput.value === "") return;
 			onInput(this.$searchInput.value);
-			e.target.value = "";
+			this.$searchInput.value = "";
 		});
 	}
 }

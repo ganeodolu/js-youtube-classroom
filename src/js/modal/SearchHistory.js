@@ -4,7 +4,6 @@ export default class SearchHistory {
 	constructor({ keywordHistory, $searchHistory }) {
     this.keywordHistory = keywordHistory;
     this.$searchHistory = $searchHistory;
-
 	}
 
   setState(nextKeyword) {
