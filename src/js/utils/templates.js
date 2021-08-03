@@ -56,3 +56,12 @@ export const SearchResultsTemplate = (results) => {
 		})
 		.join("");
 };
+
+
+export const SearchHistoryTemplate = (list) => {
+  return `<span class="text-gray-700">최근 검색어: </span>` + list.map((keyword) => {
+    return `
+      <a class="chip">${keyword}</a>
+    `;
+  }).join('');
+}
